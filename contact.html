@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact KINO — Request a Demo</title>
   <meta name="description" content="Talk to KINO. Request a live demo, reach enterprise sales, or find the office nearest you." />
+  <script>(function(){try{var t=localStorage.getItem('kino-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-
   <header class="nav">
     <a href="index.html" class="nav__logo">KINO<span>®</span></a>
     <nav class="nav__links" id="navlinks">
@@ -22,6 +21,7 @@
       <a href="contact.html">CONTACT</a>
       <a href="contact.html" class="nav__cta">REQUEST DEMO →</a>
     </nav>
+    <button class="nav__theme" id="theme-toggle" type="button" aria-label="Toggle color theme">DARK</button>
     <button class="nav__toggle" id="navtoggle" aria-label="Menu">MENU</button>
   </header>
 
