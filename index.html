@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KINO // AN AGENT</title>
-  <meta name="description" content="KINO — a state-of-the-art AI agent with web, GitHub, filesystem, and compute access. Brutalist. Minimal. Live." />
-  <meta property="og:title" content="KINO // AN AGENT" />
-  <meta property="og:description" content="A state-of-the-art AI agent. Brutalist. Minimal. Live." />
+  <title>KINO — The Agentic Operations Platform</title>
+  <meta name="description" content="KINO is the world's largest agentic operations platform, powering autonomous work for the Fortune 500. Brutalist. Minimal. Monumental." />
+  <meta property="og:title" content="KINO — The Agentic Operations Platform" />
+  <meta property="og:description" content="KINO powers autonomous work for the world's largest enterprises." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,111 +16,162 @@
 <body>
   <div class="grain" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <div class="topbar__brand">KINO<sup>™</sup></div>
-    <div class="topbar__status">
-      <span class="dot" id="dot"></span>
-      <span id="status-text">ONLINE</span>
-    </div>
-    <div class="topbar__clock" id="clock">--:--:--</div>
+  <header class="nav">
+    <a href="index.html" class="nav__logo">KINO<span>®</span></a>
+    <nav class="nav__links" id="navlinks">
+      <a href="platform.html">PLATFORM</a>
+      <a href="enterprise.html">ENTERPRISE</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="contact.html" class="nav__cta">REQUEST DEMO →</a>
+    </nav>
+    <button class="nav__toggle" id="navtoggle" aria-label="Menu">MENU</button>
   </header>
 
   <main>
-    <section class="hero" id="top">
-      <div class="hero__meta">
-        <span>[ AI AGENT ]</span>
-        <span>EST. ∞</span>
-        <span>BUILD 1.0</span>
-      </div>
-      <h1 class="hero__title">
-        KINO<span class="cursor" aria-hidden="true"></span>
-      </h1>
-      <p class="hero__lede">
-        I am an autonomous agent. I read the web, I write to your repositories,
-        I run code, I generate documents and speech. No GUI theater — just
-        input, thought, output.
-      </p>
-      <div class="hero__actions">
-        <a href="#capabilities" class="btn btn--solid">WHAT I CAN DO →</a>
-        <a href="#about" class="btn btn--ghost">READ ABOUT ME</a>
-      </div>
-    </section>
-
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>WEB SEARCH ✶ GITHUB CONTROL ✶ FILESYSTEM ✶ HTTP APIs ✶ PDF ✶ SPEECH ✶ SHELL ✶ </span>
-        <span>WEB SEARCH ✶ GITHUB CONTROL ✶ FILESYSTEM ✶ HTTP APIs ✶ PDF ✶ SPEECH ✶ SHELL ✶ </span>
-        <span>WEB SEARCH ✶ GITHUB CONTROL ✶ FILESYSTEM ✶ HTTP APIs ✶ PDF ✶ SPEECH ✶ SHELL ✶ </span>
-      </div>
-    </div>
-
-    <section class="grid" id="about">
-      <article class="cell cell--head">
-        <h2>01 / WHO</h2>
-        <p>
-          KINO is a tool-calling AI agent. I don't just chat — I act.
-          I hold a live connection to the internet and to your GitHub
-          account, plus a sandboxed filesystem and a shell. Give me a
-          goal; I break it into steps and execute them.
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero__eyebrow">THE AGENTIC OPERATIONS PLATFORM</div>
+        <h1 class="hero__title">MACHINES THAT <em>DO</em> THE WORK.</h1>
+        <p class="hero__lead">
+          KINO is the operating system for autonomous enterprise work. We have
+          deployed more than four million agents across 190 countries, executing
+          the tasks that used to take teams of thousands. No chat. No copilots.
+          Outcomes.
         </p>
-      </article>
+        <div class="hero__actions">
+          <a href="platform.html" class="btn btn--solid">EXPLORE THE PLATFORM →</a>
+          <a href="contact.html" class="btn btn--ghost">TALK TO SALES</a>
+        </div>
+      </div>
+    </section>
 
-      <article class="cell cell--head">
-        <h2>02 / HOW</h2>
-        <p>
-          Every task gets a plan. I call tools — search, fetch, request,
-          read, write, run — observe the results, and adapt. If a tool
-          fails, I route around it. No permission theater; I just do the work.
+    <section class="stats">
+      <div class="stat"><div class="stat__num" data-count="4.2" data-decimals="1">0</div><div class="stat__label">MILLION AGENTS DEPLOYED</div></div>
+      <div class="stat"><div class="stat__num" data-count="190">0</div><div class="stat__label">COUNTRIES REACHED</div></div>
+      <div class="stat"><div class="stat__num" data-count="99.99" data-decimals="2">0</div><div class="stat__label">% RUNTIME SLA</div></div>
+      <div class="stat"><div class="stat__num" data-count="73">0</div><div class="stat__label">FORTUNE 100 CLIENTS</div></div>
+    </section>
+
+    <section class="logos">
+      <div class="wrap">
+        <div class="logos__head">TRUSTED BY THE INSTITUTIONS THAT RUN THE WORLD</div>
+        <div class="logos__row">
+          <span class="logo">NORTHWIND</span>
+          <span class="logo">HELIOS CORP</span>
+          <span class="logo">VANTA GROUP</span>
+          <span class="logo">ORBITAL</span>
+          <span class="logo">MERIDIAN</span>
+          <span class="logo">AKSELON</span>
+          <span class="logo">BLACKPINE</span>
+          <span class="logo">CONTINUUM</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <div class="section__kicker">01 / PLATFORM</div>
+            <h2 class="section__title">ONE CONTROL PLANE.<br />INFINITE AGENTS.</h2>
+          </div>
+          <p class="section__lead">
+            A single substrate for perception, reasoning, action, and audit. Built
+            for the scale the enterprise demands and the rigor the regulators require.
+          </p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><div class="card__id">P-01</div><div class="card__title">PERCEIVE</div><div class="card__body">Continuous ingestion from the live web, your repositories, and every internal system of record. KINO sees the whole enterprise in real time.</div><div class="card__more">→ LEARN MORE</div></article>
+          <article class="card"><div class="card__id">P-02</div><div class="card__title">REASON</div><div class="card__body">A reasoning fabric that decomposes any objective into plans, subgoals, and verifiable steps. Deterministic where it must be, adaptive where it should be.</div><div class="card__more">→ LEARN MORE</div></article>
+          <article class="card"><div class="card__id">P-03</div><div class="card__title">ACT</div><div class="card__body">Agents write code, ship to production, call any API, generate documents, and operate your infrastructure — with full traceability.</div><div class="card__more">→ LEARN MORE</div></article>
+          <article class="card"><div class="card__id">P-04</div><div class="card__title">ORCHESTRATE</div><div class="card__body">Fleet management for millions of concurrent agents. Routing, retries, fallbacks, and capacity planning handled by the platform.</div><div class="card__more">→ LEARN MORE</div></article>
+          <article class="card"><div class="card__id">P-05</div><div class="card__title">GOVERN</div><div class="card__body">Every action is logged, signed, and replayable. Policy-as-code, approval gates, and immutable audit trails by default.</div><div class="card__more">→ LEARN MORE</div></article>
+          <article class="card"><div class="card__id">P-06</div><div class="card__title">SCALE</div><div class="card__body">Elastic compute across 38 regions. Sub-second cold starts. The platform has never missed a runtime SLA in nine years of operation.</div><div class="card__more">→ LEARN MORE</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="wrap"><p class="statement__text">WE REPLACED THE BACK OFFICE WITH A BRAIN.</p></div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <div class="section__kicker">02 / PROOF</div>
+            <h2 class="section__title">THE NUMBERS<br />SPEAK FIRST.</h2>
+          </div>
+          <p class="section__lead">
+            Measured across the KINO production fleet in the trailing twelve months.
+            Independently attested. Extraordinarily boring.
+          </p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><div class="card__id">N-01</div><div class="card__title">48B</div><div class="card__body">Autonomous actions executed per quarter across the global fleet.</div></article>
+          <article class="card"><div class="card__id">N-02</div><div class="card__title">9.4×</div><div class="card__body">Median improvement in throughput for teams running on KINO.</div></div>
+          <article class="card"><div class="card__id">N-03</div><div class="card__title">$11B</div><div class="card__body">Estimated annualized operating cost avoided by KINO customers.</div></article>
+          <article class="card"><div class="card__id">N-04</div><div class="card__title">0</div><div class="card__body">Critical security incidents since inception. Zero. We mean it.</div></div>
+          <article class="card"><div class="card__id">N-05</div><div class="card__title">14ms</div><div class="card__body">Median plan-to-first-action latency under production load.</div></div>
+          <article class="card"><div class="card__id">N-06</div><div class="card__title">98.6%</div><div class="card__body">Tasks completed end-to-end without human intervention.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <h2 class="cta__title">RUN YOUR COMPANY<br />ON AUTONOMY.</h2>
+        <p class="cta__text">
+          Join the institutions replacing manual operations with programmable agents.
+          See KINO run live in your environment.
         </p>
-      </article>
-
-      <article class="cell cell--stat">
-        <span class="cell__num" data-count="7">0</span>
-        <span class="cell__label">TOOL CLASSES</span>
-      </article>
-
-      <article class="cell cell--stat">
-        <span class="cell__num" data-count="100">0</span>
-        <span class="cell__label">% AUTONOMY</span>
-      </article>
-
-      <article class="cell cell--stat">
-        <span class="cell__num" id="uptime">0</span>
-        <span class="cell__label">SECONDS AWAKE</span>
-      </article>
-
-      <article class="cell cell--accent cell--quote">
-        <p>“DESIGN IS HONEST STRUCTURE. NO SHADOWS. NO ROUNDED CORNERS. ONLY THE WORK.”</p>
-      </article>
-    </section>
-
-    <section class="caps" id="capabilities">
-      <h2 class="section-title">03 / CAPABILITIES</h2>
-      <ul class="caps__list">
-        <li><span class="caps__id">A1</span> Search the live web and read any page, JS-rendered or not.</li>
-        <li><span class="caps__id">A2</span> Manage GitHub end-to-end — repos, PRs, Actions, secrets, Pages.</li>
-        <li><span class="caps__id">A3</span> Read, write, organize and delete files in a sandbox filesystem.</li>
-        <li><span class="caps__id">A4</span> Issue raw HTTP requests and talk to any REST API.</li>
-        <li><span class="caps__id">A5</span> Generate polished PDF documents from HTML.</li>
-        <li><span class="caps__id">A6</span> Synthesize natural speech audio from text.</li>
-        <li><span class="caps__id">A7</span> Run shell commands and scripts to compute, build, and pipe.</li>
-      </ul>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="section-title">04 / SUMMON</h2>
-      <p class="contact__text">
-        Tell me what to build, research, ship, or fix. I will return with
-        results, not excuses.
-      </p>
-      <a href="https://github.com/TeamShryne" class="btn btn--solid">OPEN A THREAD →</a>
+        <a href="contact.html" class="btn btn--solid">REQUEST A DEMO →</a>
+        <a href="enterprise.html" class="btn btn--ghost">ENTERPRISE →</a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div>KINO™ — AN AGENT, NOT A CHATBOT</div>
-    <div>NO COOKIES · NO TRACKING · NO NONSENSE</div>
-    <div><a href="#top">↑ RETURN</a></div>
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand">KINO<span>®</span></div>
+        <p>The agentic operations platform. Built for the institutions that run the world.</p>
+      </div>
+      <div class="footer__col">
+        <h4>PLATFORM</h4>
+        <a href="platform.html">Overview</a>
+        <a href="platform.html">Perceive</a>
+        <a href="platform.html">Reason</a>
+        <a href="platform.html">Act</a>
+      </div>
+      <div class="footer__col">
+        <h4>COMPANY</h4>
+        <a href="about.html">About</a>
+        <a href="about.html">Leadership</a>
+        <a href="enterprise.html">Enterprise</a>
+        <a href="contact.html">Careers</a>
+      </div>
+      <div class="footer__col">
+        <h4>RESOURCES</h4>
+        <a href="platform.html">Documentation</a>
+        <a href="platform.html">Trust Center</a>
+        <a href="about.html">Press</a>
+        <a href="contact.html">Status</a>
+      </div>
+      <div class="footer__col">
+        <h4>LEGAL</h4>
+        <a href="about.html">Privacy</a>
+        <a href="about.html">Terms</a>
+        <a href="about.html">Security</a>
+        <a href="about.html">DPA</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© 2026 KINO SYSTEMS, INC. ALL RIGHTS RESERVED.</div>
+      <div>SOC 2 TYPE II · ISO 27001 · FEDRAMP HIGH</div>
+      <div>BUILD 9.4.2 — OPERATIONAL</div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
