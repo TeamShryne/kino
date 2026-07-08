@@ -1,17 +1,37 @@
-/* KINO — minimal behavior. No gimmicks. */
+/* KINO — minimal behavior. Theme, nav, count-up. */
 
 (function () {
   "use strict";
 
-  /* ---- Mobile nav toggle ---- */
-  var toggle = document.querySelector(".nav__toggle");
-  var links = document.querySelector(".nav__links");
-  if (toggle && links) {
-    toggle.addEventListener("click", function () {
-      links.classList.toggle("is-open");
+  /* ---- Theme toggle (persisted) ---- */
+  var root = document.documentElement;
+  var themeBtn = document.getElementById("theme-toggle");
+
+  function applyTheme(t) {
+    root.setAttribute("data-theme", t);
+    if (themeBtn) themeBtn.textContent = t === "dark" ? "LIGHT" : "DARK";
+  }
+
+  // initial state is set pre-paint by an inline script in <head>
+  applyTheme(root.getAttribute("data-theme") || "light");
+
+  if (themeBtn) {
+    themeBtn.addEventListener("click", function () {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      applyTheme(next);
+      try { localStorage.setItem("kino-theme", next); } catch (e) {}
     });
-    links.addEventListener("click", function (e) {
-      if (e.target.tagName === "A") links.classList.remove("is-open");
+  }
+
+  /* ---- Mobile nav toggle ---- */
+  var navToggle = document.getElementById("navtoggle");
+  var navLinks = document.getElementById("navlinks");
+  if (navToggle && navLinks) {
+    navToggle.addEventListener("click", function () {
+      navLinks.classList.toggle("is-open");
+    });
+    navLinks.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") navLinks.classList.remove("is-open");
     });
   }
 
@@ -26,14 +46,13 @@
         var el = e.target;
         var target = parseFloat(el.getAttribute("data-count"));
         var decimals = parseInt(el.getAttribute("data-decimals") || "0", 10);
-        var suffix = el.getAttribute("data-suffix") || "";
         var dur = 1200;
         var start = null;
         function step(ts) {
           if (!start) start = ts;
           var p = Math.min((ts - start) / dur, 1);
           var val = p * target;
-          el.textContent = (decimals ? val.toFixed(decimals) : Math.round(val)) + suffix;
+          el.textContent = decimals ? val.toFixed(decimals) : Math.round(val);
           if (p < 1) requestAnimationFrame(step);
         }
         requestAnimationFrame(step);
