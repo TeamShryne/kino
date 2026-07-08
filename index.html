@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KINO — The Agentic Operations Platform</title>
-  <meta name="description" content="KINO is the world's largest agentic operations platform, powering autonomous work for the Fortune 500. Brutalist. Minimal. Monumental." />
+  <meta name="description" content="KINO is the world's largest agentic operations platform, powering autonomous work for the Fortune 500." />
   <meta property="og:title" content="KINO — The Agentic Operations Platform" />
   <meta property="og:description" content="KINO powers autonomous work for the world's largest enterprises." />
   <meta property="og:type" content="website" />
+  <script>(function(){try{var t=localStorage.getItem('kino-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-
   <header class="nav">
     <a href="index.html" class="nav__logo">KINO<span>®</span></a>
     <nav class="nav__links" id="navlinks">
@@ -25,6 +24,7 @@
       <a href="contact.html">CONTACT</a>
       <a href="contact.html" class="nav__cta">REQUEST DEMO →</a>
     </nav>
+    <button class="nav__theme" id="theme-toggle" type="button" aria-label="Toggle color theme">DARK</button>
     <button class="nav__toggle" id="navtoggle" aria-label="Menu">MENU</button>
   </header>
 
@@ -110,11 +110,11 @@
         </div>
         <div class="grid-3">
           <article class="card"><div class="card__id">N-01</div><div class="card__title">48B</div><div class="card__body">Autonomous actions executed per quarter across the global fleet.</div></article>
-          <article class="card"><div class="card__id">N-02</div><div class="card__title">9.4×</div><div class="card__body">Median improvement in throughput for teams running on KINO.</div></div>
+          <article class="card"><div class="card__id">N-02</div><div class="card__title">9.4×</div><div class="card__body">Median improvement in throughput for teams running on KINO.</div></article>
           <article class="card"><div class="card__id">N-03</div><div class="card__title">$11B</div><div class="card__body">Estimated annualized operating cost avoided by KINO customers.</div></article>
-          <article class="card"><div class="card__id">N-04</div><div class="card__title">0</div><div class="card__body">Critical security incidents since inception. Zero. We mean it.</div></div>
-          <article class="card"><div class="card__id">N-05</div><div class="card__title">14ms</div><div class="card__body">Median plan-to-first-action latency under production load.</div></div>
-          <article class="card"><div class="card__id">N-06</div><div class="card__title">98.6%</div><div class="card__body">Tasks completed end-to-end without human intervention.</div></div>
+          <article class="card"><div class="card__id">N-04</div><div class="card__title">0</div><div class="card__body">Critical security incidents since inception. Zero. We mean it.</div></article>
+          <article class="card"><div class="card__id">N-05</div><div class="card__title">14ms</div><div class="card__body">Median plan-to-first-action latency under production load.</div></article>
+          <article class="card"><div class="card__id">N-06</div><div class="card__title">98.6%</div><div class="card__body">Tasks completed end-to-end without human intervention.</div></article>
         </div>
       </div>
     </section>
